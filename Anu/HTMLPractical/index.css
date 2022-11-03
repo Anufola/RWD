@@ -1,0 +1,34 @@
+.London {
+    background-color: tomato;
+    color: white;
+    border: 5px solid black;
+    padding: 20px;
+}
+.Paris {
+    background-color: powderblue;
+    background-image: url(images/mov\ 2.jpg);
+    color: white;
+    border: 3px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Tokyo{
+    background-color: palegoldenrod;
+    color: white;
+    border: 2px solid black;
+    padding: 2px;
+}
+body{
+    background-color: blueviolet;
+}
+.London h2 {
+    text-transform: uppercase;
+}
+.Tokyo h2{
+    text-transform: uppercase;
+}
+.Paris h2{
+    text-transform: capitalize;
+}
+.main{
+    text-align: center;
+}

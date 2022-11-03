@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        table,th,td{
+            border: 10px solid black;
+        }
+        input[type=text]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <td>
+    <form action="/action_page.php">
+        <h1>Registration Form</h1>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="John">
+        <label for="lname"> Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Rose"><br><br>
+        <label for="age">Age</label>
+        <input type="text">
+        <label for="Date of Birth"> Date of Birth: </label>
+        <input type="date" name="Date of birth" id="date of birth">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br><br>
+        <label for="sex"> SEX: </label><br><br>
+        <input type="radio" id="Male" name="Sex" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Female" value="Female">
+        <label for="female">Female</label><br><br>
+        <tr>
+            <td>
+        <label for="Hobbies">HOBBIES:</label><br><br>
+        <input type="checkbox" id="Reading" name="reading" value="reading">
+        <label for="reading"> Reading</label><br>
+        <input type="checkbox" id="Singing" name="Singing" value="Singing">
+        <label for="singing"> Singing</label><br>
+        <input type="checkbox" id="football" name="football" value="Football">
+        <label for="football"> Football</label><br>
+        <input type="checkbox" id="dancing" name="dancing" value="Dancing">
+        <label for="dancing"> Dancing</label><br><br>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label for="favcolor">Select your favourite color:</label>
+        <input type="color" name="favcolor" id="favcolor" value="#FFD700"><br><br>
+        <input type="submit" style="color: blue;" style="border: 0pc;">
+        <input type="reset" value="Reset" style="color: red;">
+        <label for="Sl" style="color: blue;">Select Browsers</label><br>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist><br>
+        </td>
+        </tr> 
+    </form>
+</td>
+    </tr>
+</table>
+</body>
+</html>

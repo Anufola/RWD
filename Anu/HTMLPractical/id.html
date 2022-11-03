@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID</title>
+    <style>
+        #myHeader {
+            background-color: aqua;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myHeader">My Header</h1>
+    <h2> Iframe </h2>
+    <iframe src="images/OnlineSBI.png" frameborder="20"></iframe>
+    <h2>Using Javascript to change text</h2>
+    <p>This example writes Hello Javascript into an HTML element with id="demo":</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello Javascript!";
+    </script>
+    <h2>Sized Emojis</h2>
+    <p style="font-size: 48px;">&#128512; &#128516; &#128525; &#128172;</p>
+</body>
+</html>

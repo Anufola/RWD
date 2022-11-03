@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style> body {background-color: lightgreen;}
+                table,th,td{
+            border: 10px solid gold;
+        }
+        input[type=Tel NO ] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+
+    </style>
+</head>
+<body>
+    <form action="/action_page.php">
+        <h1>Application Form</h1>
+        <label for="PD" style="color: blue;">PERSONAL DETAILS</label><br><br>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" value="John" readonly>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" value="James" disabled><br><hr>
+        <label for="Con" style="color: blue;">CONTACT</label><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="Tel No">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" placeholder="080-4577-6784" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+        <label for="">Country:</label>
+        <input type="text" id="country" name="country" maxlength="6">
+        <label for="">State:</label>
+        <input type="text" id="State" name="state">
+        <label for="">Address:</label>
+        <input type="text" id="Address" name="Address"><br><br>
+        <label for="Date available">Date Available: </label>
+        <input type="date" name="Date Available" id="date available" step="3">
+        <label for="my file">CV:</label>
+        <input type="file" name="myfile" id="myfile" multiple>
+        <label for="LURL">Linkedln URL:</label>
+        <input type="url" name="lURL" id="LURL" size="50">
+        <label for="TURL">Twitter URL:</label>
+        <input type="url" name="twitter" id="twitter"><br><hr>
+        <label for="skill" style="color: blue;">SKILLS</label><br><br>
+        <input type="checkbox" id="coding" name="coding" value="coding">
+        <label for="Coding">Coding</label><br>
+        <input type="checkbox" id="writing" name="writing" value="writing">
+        <label for="writing">Writing</label><br>
+        <input type="checkbox" id="Marketing" name="marketing" value="marketing">
+        <label for="marketing">Marketing</label><br>
+        <input type="checkbox" id="Data analysis" name="data analysis" value="data analysis">
+        <label for="Data analysis">Data Analysis</label><br>
+        <input type="checkbox" id="research expert" name="research expert" value="research expert">
+        <label for="research expert">Research Expert</label><br>
+        <input type="checkbox" id="Ms" name="ms" value="ms">
+        <label for="ms">Miscrosoft Expert</label><br>
+        <input type="checkbox" id="SEO" name="SEO" value="SEO">
+        <label for="SEO">SEO</label><br><hr>
+        <label for="Edu" style="color: blue;">EDUCATION</label><br><br>
+        <table>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Graduated Date</th>
+                <th>Degree</th>
+            </tr>
+            <tr>
+                <th>Highschool</th>
+                <td><input type="text" id="hname" placeholder="Highschool Name"></td>
+                <td><input type="text" id="hcity" placeholder="Highschool City"></td>
+                <td><input type="text" id="hdate" placeholder="Highschool Date"></td>
+                <td><input type="text" id="hdegree" placeholder="Highschool Degree"></td>
+            </tr>
+            <tr>
+                <th>College</th>
+                <td><input type="text" id="cname" placeholder="College Name"></td>
+                <td><input type="text" id="ccity" placeholder="College City"></td>
+                <td><input type="text" id="cdate" placeholder="College Date"></td>
+                <td><input type="text" id="cdegree" placeholder="College Degree"></td>
+            </tr>
+            <tr>
+                <th>University</th>
+                <td><input type="text" id="uname" placeholder="University Name"></td>
+                <td><input type="text" id="Ucity" placeholder="University City"></td>
+                <td><input type="text" id="udate" placeholder="University Date"></td>
+                <td><input type="text" id="udegree" placeholder="University Degree"></td>
+            </tr>
+        </table><br>
+        <label for="Sl" style="color: blue;">Select Browsers</label><br>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist><br>
+        <input type="image" src="Images/sumbit.jfif" alt="Submit" width="58" height="58"><br>
+    </form>
+</body>
+</html>

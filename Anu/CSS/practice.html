@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css practice</title>
+</head>
+<style>
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+    }
+    div.gallery:hover{
+        border: 1px solid #777;
+    }
+    div.gallery img{
+        width:100%;
+        height: auto;
+    }
+    div.desc {
+        padding:15px;
+        text-align: center;
+    }
+    #rcorners1{
+        border-radius: 25px;
+        background: #73ad21;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+        float: right;
+    }
+    #rcorners2{
+        border-radius: 15px 50px 30px 5px;
+        background: #73ad33;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+        float: right;
+    }
+</style>
+<body>
+    <div class= "gallery">
+        <a target="_blank" href="Images/gambling addiction.png"> <img src="Images/gambling addiction.png" alt="gambling" width="600" height="400"></a>
+        <div class="desc">Add a description of the image here</div>
+    </div><br><br>
+    <p id="rcorners1">Rounded Corners!</p><br><br>
+    <p></p>
+    <p id="rcorners2">Four values border radius</p>
+</body>
+</html>
